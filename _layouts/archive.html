@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+     Based on:
+
+     Forty by HTML5 UP
+     html5up.net | @ajlkn
+     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+    {% include head.html %}
+
+    <body>
+
+        {% include header.html %}
+
+
+        <!-- Main -->
+        <section id="main" class="style2">
+
+            <!-- One -->
+            <section id="one">
+	              <div class="inner">
+                    <a href="{{ post.url }}">
+	                  <header class="major">
+	                      <h1>{{ page.title | upcase }}</h1>
+	                  </header>
+                    </a>
+	              </div>
+                    {% for post in page.posts %}
+                <div class="content box">
+                        <a href="{{ post.url }}">
+                            <h2>{{ post.title }}</h2>
+	                          {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+                            {% if post.description %}<p>{{ post.descrption }}</p> {% endif %}
+	                          {% if post.date %}<p>{{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
+                        </a>
+                </div>
+                    {% endfor %}
+            </section>
+
+        </section>
+
+        {% include footer.html %}
+
+    </body>
+
+</html>
