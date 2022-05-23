@@ -19,13 +19,17 @@ in the [`Gemfile`](Gemfile). The theme is then set in [`_config.yml`](_config.ym
 ### Making changes on github
 
 Follow the steps [provided by github to add a using their web
-ui.](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository**
+ui.](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)**
 
 
 ### Making changes locally
 
-To contribute all you need to do is clone the repo, make your changes, push a
-new branch, and make a pull request.
+_You probably will need to make a [personal access
+token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+for this._
+
+To contribute all you need to do is clone the repo, make your changes,
+push a new branch, and make a pull request.
 
 **Note:** if you are not part of the github project then you will need to [fork
 the project first.](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
